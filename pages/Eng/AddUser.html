@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- boostrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../../assets/css/common.css" />
+    <link rel="stylesheet" href="../../assets/css/layout.css" />
+    <link rel="stylesheet" href="../../assets/css/edit_profile.css" />
+    <link rel="stylesheet" href="../../assets/css/add_user.css" />
+
+    <title>Add User</title>
+  </head>
+  <body>
+    <aside>
+      <div class="top">
+        <img src="../../assets/img/logo.png" alt="" />
+      </div>
+
+      <nav>
+        <li class="head">Main</li>
+        <div class="nav-options">
+         <li>
+            <a href="../../index.html">
+              <div>
+                <img src="../../assets/img/home_not_active.png" alt="" />
+              </div>
+              <p>Dashboard</p>
+            </a>
+          </li>
+          <li >
+            <a href="./Additional_Services.html">
+              <div>
+                <img src="../../assets/img/repair.png" alt="" />
+              </div>
+              <p>Additional Services</p>
+            </a>
+          </li>
+        </div>
+        <li class="head">Details</li>
+        <div class="nav-options">
+          <li>
+            <a href="./summary.html">
+              <div>
+                <img src="../../assets/img/report.png" alt="" />
+              </div>
+              <p>Summary</p>
+            </a>
+          </li>
+        </div>
+
+        <li class="head">general</li>
+        <div class="nav-options">
+          <li>
+            <a href="./EditProfileUser.html">
+              <div>
+                <img src="../../assets/img/active_edit_profile.png" alt="" />
+              </div>
+              <p>Edit User Profile</p>
+            </a>
+          </li>
+          <li>
+            <a href="./EditProfile.html">
+              <div>
+                <img src="../../assets/img/file.png" alt="" />
+              </div>
+              <p>Edit Company Profile</p>
+            </a>
+          </li>
+          <li class="active">
+            <a href="./AddUser.html">
+              <div>
+                <img src="../../assets/img/new-user.png" alt="" />
+              </div>
+              <p>Add User</p>
+            </a>
+          </li>
+        </div>
+      </nav>
+    </aside>
+
+    <section class="content-area">
+      <header>
+        <form action="">
+          <input type="text" />
+          <button>
+            <img src="../../assets/img/search.png" alt="" />
+          </button>
+        </form>
+
+        <div class="icons-wrapper">
+          <button class="lang-button outline">AR</button>
+          <div class="icon-wrappper">
+            <img src="../../assets/img/notfiy.png" alt="" />
+          </div>
+          <div class="icon-wrappper">
+            <img src="../../assets/img/profile.png" alt="" />
+          </div>
+        </div>
+
+        <div class="burger-icon">
+          <i class="fas fa-bars"></i>
+        </div>
+      </header>
+
+      <section class="body-area body-content-area">
+        <div class="top-area">
+          <h2>
+            <img src="../../assets/img/info.png" alt="" />
+            about
+          </h2>
+          <div class="row">
+            <div class="col-xl-9 col-md-8 ">
+              <div class="input-collection row">
+                <div class="input_container_common col-lg-6">
+                  <label for="Name"> Name </label>
+                  <div class="input_wrapper_common">
+                    <input type="text" placeholder="Name" id="Name" />
+                    <img src="../../assets/img/pen.png" alt="" />
+                  </div>
+                </div>
+                <div class="input_container_common col-lg-6  mt-lg-0 mt-4">
+                  <label for="Commercial-Registration"> ID/Residence </label>
+                  <div class="input_wrapper_common">
+                    <input
+                      type="text"
+                      placeholder="0000-99-00"
+                      id="Commercial-Registration"
+                    />
+                    <img src="../../assets/img/pen.png" alt="" />
+                  </div>
+                </div>
+                <div class="input_container_common col-lg-6 mt-4">
+                  <label for="company_name"> Designation </label>
+                  <div class="input_wrapper_common">
+                    <input type="text" placeholder="Manager" id="Manager" />
+                    <img src="../../assets/img/pen.png" alt="" />
+                  </div>
+                </div>
+                <div class="input_container_common col-lg-6 mt-4">
+                  <label for="contact_person"> Organization </label>
+                  <div class="input_wrapper_common">
+                    <input
+                      type="text"
+                      placeholder="Organization name"
+                      id="Organization name"
+                    />
+                    <img src="../../assets/img/pen.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-xl-3 mt-4 mt-lg-0">
+              <label for="submit_file" class="upload_photo">
+                <input type="file" id="submit_file" style="display: none" />
+                <div class="body">
+                  <div class="content-wrapper">
+                    <img src="../../assets/img/cloud-computing.png" alt="" />
+                    <p>Drag or Upload</p>
+                  </div>
+                </div>
+                <div class="bottom">
+                  <h4>Upload Image</h4>
+                </div>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="top-area bottom-area">
+          <h2>
+            <img src="../../assets/img/info.png" alt="" />
+            Contact
+          </h2>
+          <div class="row">
+            <dic class="col-md-9">
+              <div class="input-collection row">
+                <div class="input_container_common col-lg-6">
+                  <label for="Phone"> Email</label>
+                  <div class="input_wrapper_common">
+                    <input type="text" placeholder="name@company.com" id="Phone" />
+                    <img src="../../assets/img/pen.png" alt="" />
+                  </div>
+                </div>
+                <div class="input_container_common col-lg-6 mt-lg-0 mt-4">
+                  <label for="Contact-Number">Contact Number</label>
+                  <div class="input_wrapper_common">
+                    <input
+                      type="text"
+                      placeholder="0000-000-00"
+                      id="Email-Address"
+                    />
+                    <img src="../../assets/img/pen.png" alt="" />
+                  </div>
+                </div>
+                <div class="input_container_common col-lg-6 mt-4">
+                  <label for="Country_Name"> Country* </label>
+                  <div class="input_wrapper_common">
+                    <input
+                      type="text"
+                      placeholder="Country Name"
+                      id="Country_Name"
+                    />
+                    <img src="../../assets/img/pen.png" alt="" />
+                  </div>
+                </div>
+                <div class="input_container_common col-lg-6 mt-4">
+                  <label for="Street_Name"> Street Name* </label>
+                  <div class="input_wrapper_common">
+                    <input
+                      type="text"
+                      placeholder="Street Name"
+                      id="Street_Name"
+                    />
+                    <img src="../../assets/img/pen.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3"></div>
+          </div>
+        </div>
+
+        <div class="button-wrapper">
+          <button class="common_btn">add user</button>
+        </div>
+      </section>
+    </section>
+
+    <script src="../../assets/js/index.js"></script>
+  </body>
+</html>

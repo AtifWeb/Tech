@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url(./common/sidebar.css);
+@import url(./common/header.css);
+@import url(./common/body.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+ul,
+nav {
+  list-style: none;
+}
+p {
+  margin-bottom: 0px !important;
+}

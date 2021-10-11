@@ -1,0 +1,54 @@
+.content-area header {
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content-area header form {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  height: 40px;
+}
+.content-area header form input {
+  flex: 1;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+  font-size: 17px;
+  height: 100%;
+}
+.content-area header form button {
+  height: 40px;
+  min-width: 50px;
+  background-color: #1689b4;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.content-area header .icons-wrapper {
+  display: flex;
+  align-items: center;
+}
+.content-area header .icons-wrapper > * {
+  cursor: pointer;
+}
+.content-area header .icons-wrapper > * + * {
+  margin-left: 1rem;
+}
+@media screen and (max-width: 780px) {
+  .content-area header form {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 2rem;
+    z-index: 2;
+    background: #fff;
+  }
+}

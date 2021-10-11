@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap");
+body {
+  background-color: #e6ebf3;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+}
+.content-area {
+  flex: 1;
+  height: 100vh;
+  overflow: auto;
+}
+.content-area::-webkit-scrollbar {
+  display: none;
+}
+.body-content-area {
+  padding: 3rem 2rem;
+  background-color: #e6ebf3;
+}
+body.arabic {
+  flex-direction: row-reverse;
+  font-family: "Almarai", sans-serif;
+}
+
+/* framework */
+.text_align_right {
+  text-align: right;
+  display: block;
+}
+
+.row_reverse {
+  flex-direction: row-reverse;
+}
+.content-area header .icons-wrapper.arabic > * + * {
+  margin-left: 0px;
+  margin-right: 1rem;
+}
+.input_container_common {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.input_container_common label {
+  font-size: 13px;
+}
+.input_container_common.arabic {
+  align-items: flex-end;
+}
+.input_container_common.arabic label {
+  text-align: right;
+  display: block;
+}
+.input_wrapper_common {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  background-color: #eeeeee;
+}
+.input_wrapper_common input {
+  flex: 1;
+  height: 45px;
+  padding: 0rem 1rem;
+  background-color: transparent;
+  border: none;
+  font-size: 15px !important;
+  font-weight: 600;
+  outline: none;
+  width: 100%;
+}
+
+.input_wrapper_common img {
+  width: 50px;
+  height: 45px;
+  object-fit: cover;
+}
+
+.input_wrapper_common.arabic {
+  flex-direction: row-reverse;
+}
+.input_wrapper_common.arabic input {
+  text-align: right;
+}
+.d_flex,
+.d_flex_align_center,
+.d_flex_justify_center,
+.d_flex_justify_end,
+.d_flex_center {
+  display: flex;
+}
+.d_flex_align_center {
+  align-items: center;
+}
+.d_flex_justify_center {
+  justify-content: center;
+}
+.d_flex_justify_end {
+  justify-content: end;
+}
+.d_flex_center {
+  align-items: center;
+  justify-content: center;
+}
+
+.common_btn {
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #1689b5;
+  border-radius: 99px;
+  width: 140px;
+  text-transform: uppercase;
+  height: 45px;
+  cursor: pointer;
+  font-size: 14px;
+}
+table thead {
+  background-color: #e6eaf3;
+}
+table thead th {
+  color: #2e2d2c;
+}
+table thead th:first-child,
+table tbody td:first-child {
+  text-align: left;
+}
+table thead th,
+table tbody td {
+  font-weight: 500;
+  text-align: center;
+  font-size: 13px;
+}
+table tbody td.stars > * {
+  color: #1287b2;
+}
+
+table tbody td {
+  font-size: 14px;
+  color: #4a4a4a;
+}
+.table_ar {
+  direction: rtl;
+}
+.badge {
+  padding: 0.5rem 0.7rem;
+  font-weight: 500;
+}
+.badge_orange {
+  background-color: #f39417;
+  color: #fff;
+}
+
+.pagination a {
+  color: #818ea7;
+  font-size: 14px;
+}
+.pagination a:hover {
+  background-color: #3e70c9;
+  color: #fff;
+}
+.pagination .active a {
+  background-color: #3e70c9 !important;
+}
+
+/* cards */
+.card {
+  min-height: 150px;
+  padding: 0rem 0.5rem;
+}
+.card-subtitle {
+  font-size: 16px;
+  color: #1689b5;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1100px) {
+  table thead th,
+  table tbody td {
+    font-weight: 500;
+    text-align: center;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .input_wrapper_common {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .pagination > *:not(:first-child, :last-child, :nth-child(2)) {
+    display: none;
+  }
+}
+@media screen and (max-width: 470px) {
+  /* cards */
+  .card {
+    width: 100% !important;
+    margin-right: 0px !important;
+    margin-bottom: 1rem;
+  }
+
+  .cards_wrapper {
+    flex-direction: column;
+    width: 85%;
+  }
+}
+@media screen and (max-width: 780px) {
+  .body-content-area {
+    padding-bottom: 10rem;
+  }
+}

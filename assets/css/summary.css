@@ -1,0 +1,103 @@
+.box-wrapper {
+  background-color: #fff;
+  padding: 1.5rem;
+  margin: 2rem;
+  border-radius: 15px;
+}
+
+.box-wrapper .top-area {
+  display: flex;
+  align-items: center;
+}
+.box-wrapper .top-area > h2 {
+  color: #1689b4;
+  font-weight: 500;
+  font-size: 21px;
+}
+.box-wrapper .top-area > * + * {
+  margin-left: 1rem;
+}
+.button-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.button-wrapper button {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 0.2rem 1rem;
+}
+.button-wrapper button img {
+  margin-left: 5px;
+}
+.box-wrapper form {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  height: 40px;
+  margin-left: 4rem !important;
+}
+.box-wrapper form.form_search_ar {
+  margin-left: 0rem !important;
+  margin-right: 4rem;
+}
+.box-wrapper input {
+  flex: 1;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+  font-size: 15px;
+  font-weight: 400;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.form_search_ar input {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.box-wrapper button {
+  height: 40px;
+  min-width: 50px;
+  background-color: #1689b4;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.form_search_ar + .button-wrapper {
+  justify-content: flex-start;
+}
+.form_search_ar button {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+@media screen and (max-width: 760px) {
+  .box-wrapper .top-area {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .box-wrapper form {
+    margin-left: 0px !important;
+    margin: 1rem 0rem;
+  }
+  .button-wrapper {
+    margin-left: 0px !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .box-wrapper input,
+  .box-wrapper form {
+    width: 100% !important;
+  }
+}

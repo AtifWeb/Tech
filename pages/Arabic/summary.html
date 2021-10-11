@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- boostrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../../assets/css/common.css" />
+
+    <link rel="stylesheet" href="../../assets/css/summary.css" />
+
+    <title>Edit Profile</title>
+  </head>
+  <body class="arabic">
+    <aside class="arabic">
+      <div class="top">
+        <img src="../../assets/img/logo.png" alt="" />
+      </div>
+
+      <nav>
+        <li class="head">الأساسية</li>
+        <div class="nav-options">
+          <li>
+            <a href="./index.html">
+              <div>
+                <img src="../../assets/img/home_not_active.png" alt="" />
+              </div>
+              <p>لوحة المعلومات</p>
+            </a>
+          </li>
+          <li>
+            <a href="./Additional_Services.html">
+              <div>
+                <img src="../../assets/img/repair.png" alt="" />
+              </div>
+              <p>خدمات إضافية</p>
+            </a>
+          </li>
+        </div>
+        <li class="head">التفاصيل</li>
+        <div class="nav-options">
+          <li class="active">
+            <a href="./summary.html">
+              <div>
+                <img src="../../assets/img/report.png" alt="" />
+              </div>
+              <p>ملخص</p>
+            </a>
+          </li>
+        </div>
+
+        <li class="head">جنرال لواء</li>
+        <div class="nav-options">
+          <li>
+            <a href="./EditProfileUser.html">
+              <div>
+                <img src="../../assets/img/forum-user.png" alt="" />
+              </div>
+              <p>تعديل ملف المستخدم</p>
+            </a>
+          </li>
+          <li>
+            <a href="./EditProfile.html">
+              <div>
+                <img src="../../assets/img/active_edit_profile.png" alt="" />
+              </div>
+              <p>تعديل ملف المنشأة</p>
+            </a>
+          </li>
+          <li>
+            <a href="./AddUser.html">
+              <div>
+                <img src="../../assets/img/new-user.png" alt="" />
+              </div>
+              <p>إضافة مستخدم</p>
+            </a>
+          </li>
+        </div>
+      </nav>
+    </aside>
+
+    <section class="content-area arabic">
+      <header class="row_reverse">
+        <div class="burger-icon">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <form action=" " class="row_reverse">
+          <input
+            type="text"
+            placeholder="أكتب هنا للبحث"
+            class="text_align_right"
+          />
+          <button>
+            <img src="../../assets/img/search.png" alt="" />
+          </button>
+        </form>
+
+        <div class="icons-wrapper arabic row_reverse">
+          <button class="lang-button outline">EN</button>
+          <div class="icon-wrappper">
+            <img src="../../assets/img/notfiy.png" alt="" />
+          </div>
+          <div class="icon-wrappper">
+            <img src="../../assets/img/profile.png" alt="" />
+          </div>
+        </div>
+      </header>
+
+      <section class="body-area">
+        <div class="box-wrapper">
+          <div class="top-area row_reverse">
+            <h2>ملخص</h2>
+            <form action="" class="row_reverse form_search_ar d_flex">
+              <input type="text" placeholder="Type here to search" />
+              <button>
+                <img src="../../assets/img/search.png" alt="" />
+              </button>
+            </form>
+
+            <div class="button-wrapper">
+              <button class="row_reverse">
+                عرض الكل <img src="../../assets/img/dropdown.png" alt="" />
+              </button>
+            </div>
+          </div>
+          <table
+            class="
+              table
+              mt-5
+              table-bordered table-hover table-responsive-md table_ar
+            "
+          >
+            <thead>
+              <tr>
+                <th>رقم</th>
+                <th>بيانات الخدمة</th>
+                <th>إسم الفني</th>
+                <th>التاريخ</th>
+                <th>الحالة</th>
+                <th>التقييم</th>
+                <th>استفتي</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </td>
+                <td>
+                  <span class="badge badge_orange">عرض</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <!-- pagination -->
+          <!-- <div class="d_flex_justify_end">
+            <nav aria-label="Page navigation example ">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#">Previous</a>
+                </li>
+                <li class="page-item active">
+                  <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+          </div> -->
+        </div>
+      </section>
+    </section>
+
+    <script src="../../assets/js/index.js"></script>
+  </body>
+</html>

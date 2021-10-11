@@ -1,0 +1,8 @@
+.cards_wrapper {
+  margin: 2rem;
+}
+@media screen and (max-width: 470px) {
+  .cards_wrapper {
+    flex-direction: column;
+  }
+}

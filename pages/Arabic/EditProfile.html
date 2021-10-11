@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- boostrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../../assets/css/common.css" />
+    <link rel="stylesheet" href="../../assets/css/indexArabic.css" />
+    <link rel="stylesheet" href="../../assets/css/edit_profile.css" />
+    <link rel="stylesheet" href="../../assets/css/layout.css" />
+    <link rel="stylesheet" href="../../assets/css/edit_profile_arabic.css" />
+
+    <title>Edit Profile Arabic</title>
+  </head>
+  <body class="arabic">
+    <aside class="arabic">
+      <div class="top">
+        <img src="../../assets/img/logo.png" alt="" />
+      </div>
+
+      <nav>
+        <li class="head">الأساسية</li>
+        <div class="nav-options">
+          <li>
+            <a href="./index.html">
+              <div>
+                <img src="../../assets/img/home_not_active.png" alt="" />
+              </div>
+              <p>لوحة المعلومات</p>
+            </a>
+          </li>
+          <li>
+            <a href="./Additional_Services.html">
+              <div>
+                <img src="../../assets/img/repair.png" alt="" />
+              </div>
+              <p>خدمات إضافية</p>
+            </a>
+          </li>
+        </div>
+        <li class="head">التفاصيل</li>
+        <div class="nav-options">
+          <li>
+            <a href="./summary.html">
+              <div>
+                <img src="../../assets/img/report.png" alt="" />
+              </div>
+              <p>ملخص</p>
+            </a>
+          </li>
+        </div>
+
+        <li class="head">جنرال لواء</li>
+        <div class="nav-options">
+          <li>
+            <a href="./EditProfileUser.html">
+              <div>
+                <img src="../../assets/img/forum-user.png" alt="" />
+              </div>
+              <p>تعديل ملف المستخدم</p>
+            </a>
+          </li>
+          <li class="active">
+            <a href="./EditProfile.html">
+              <div>
+                <img src="../../assets/img/active_edit_profile.png" alt="" />
+              </div>
+              <p>تعديل ملف المنشأة</p>
+            </a>
+          </li>
+          <li>
+            <a href="./AddUser.html">
+              <div>
+                <img src="../../assets/img/new-user.png" alt="" />
+              </div>
+              <p>إضافة مستخدم</p>
+            </a>
+          </li>
+        </div>
+      </nav>
+    </aside>
+
+    <section class="content-area arabic">
+      <header class="row_reverse">
+        <div class="burger-icon">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <form action=" " class="row_reverse">
+          <input
+            type="text"
+            placeholder="أكتب هنا للبحث"
+            class="text_align_right"
+          />
+          <button>
+            <img src="../../assets/img/search.png" alt="" />
+          </button>
+        </form>
+
+        <div class="icons-wrapper arabic row_reverse">
+          <button class="lang-button outline">EN</button>
+          <div class="icon-wrappper">
+            <img src="../../assets/img/notfiy.png" alt="" />
+          </div>
+          <div class="icon-wrappper">
+            <img src="../../assets/img/profile.png" alt="" />
+          </div>
+        </div>
+      </header>
+      <section class="body-area body-content-area">
+        <div class="top-area arabic">
+          <h2 class="d_flex_align_center">
+            <img src="../../assets/img/info.png" alt="" />
+            عن الشركة
+          </h2>
+          <div class="input-collection row row_reverse">
+            <div class="input_container_common arabic col-sm-6">
+              <label for="company_name">
+                إسم الشركة (كما يظهر في السجل التجاري)
+              </label>
+              <div class="input_wrapper_common arabic">
+                <input type="text" id="company_name" />
+                <img src="../../assets/img/pen.png" alt="" />
+              </div>
+            </div>
+            <div class="input_container_common arabic col-sm-6 mt-lg-0 mt-4">
+              <label for="Commercial-Registration"> رقم السجل التجاري </label>
+              <div class="input_wrapper_common arabic">
+                <input type="text" id="Commercial-Registration" />
+                <img src="../../assets/img/pen.png" alt="" />
+              </div>
+            </div>
+            <div class="input_container_common arabic col-sm-6 mt-4">
+              <label for="company_name">
+                إسم المدير (كما يظهر في السجل التجاري)
+              </label>
+              <div class="input_wrapper_common arabic">
+                <input type="text" id="company_name" />
+                <img src="../../assets/img/pen.png" alt="" />
+              </div>
+            </div>
+            <div class="input_container_common arabic col-sm-6 mt-4">
+              <label for="contact_person"> منصب الشخص المسؤول </label>
+              <div class="input_wrapper_common arabic">
+                <input type="text" id="contact_person" />
+                <img src="../../assets/img/pen.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="top-area bottom-area arabic">
+          <h2 class="d_flex_align_center">
+            <img src="../../assets/img/phone_edit_profile.png" alt="" />
+            بيانات التواصل
+          </h2>
+          <div class="input-collection row">
+            <div class="input_container_common arabic col-sm-6">
+              <label for="Phone"> رقم الهاتف</label>
+              <div class="input_wrapper_common arabic">
+                <input type="text" id="Phone" />
+                <img src="../../assets/img/pen.png" alt="" />
+              </div>
+            </div>
+            <div class="input_container_common arabic col-sm-6 mt-lg-0 mt-4">
+              <label for="Email-Address"> البريد الإلكتروني</label>
+              <div class="input_wrapper_common arabic">
+                <input type="email" id="Email-Address" />
+                <img src="../../assets/img/pen.png" alt="" />
+              </div>
+            </div>
+            <div class="input_container_common arabic col-sm-6 mt-4">
+              <label for="Country_Name"> الدولة </label>
+              <div class="input_wrapper_common arabic">
+                <input type="text" id="Country_Name" />
+                <img src="../../assets/img/pen.png" alt="" />
+              </div>
+            </div>
+            <div class="input_container_common arabic col-sm-6 mt-4">
+              <label for="Street_Name"> إسم الشارع </label>
+              <div class="input_wrapper_common arabic">
+                <input type="text" id="Street_Name" />
+                <img src="../../assets/img/pen.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="button-wrapper arabic">
+          <button class="common_btn">تعديل المستخدم</button>
+        </div>
+      </section>
+    </section>
+
+    <script src="../../assets/js/index.js"></script>
+  </body>
+</html>

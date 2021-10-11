@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- boostrap -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="../../assets/css/common.css" />
+    <link rel="stylesheet" href="../../assets/css/layout.css" />
+    <link rel="stylesheet" href="../../assets/css/edit_profile.css" />
+
+    <title>Edit Profile</title>
+  </head>
+  <body>
+    <aside>
+      <div class="top">
+        <img src="../../assets/img/logo.png" alt="" />
+      </div>
+
+      <nav>
+        <li class="head">Main</li>
+        <div class="nav-options">
+          <li>
+            <a href="../../index.html">
+              <div>
+                <img src="../../assets/img/home_not_active.png" alt="" />
+              </div>
+              <p>Dashboard</p>
+            </a>
+          </li>
+          <li>
+            <a href="./Additional_Services.html">
+              <div>
+                <img src="../../assets/img/repair.png" alt="" />
+              </div>
+              <p>Additional Services</p>
+            </a>
+          </li>
+        </div>
+        <li class="head">Details</li>
+        <div class="nav-options">
+          <li>
+            <a href="./summary.html">
+              <div>
+                <img src="../../assets/img/report.png" alt="" />
+              </div>
+              <p>Summary</p>
+            </a>
+          </li>
+        </div>
+
+        <li class="head">general</li>
+        <div class="nav-options">
+          <li>
+            <a href="./EditProfileUser.html">
+              <div>
+                <img src="../../assets/img/active_edit_profile.png" alt="" />
+              </div>
+              <p>Edit User Profile</p>
+            </a>
+          </li>
+          <li class="active">
+            <a href="./EditProfile.html">
+              <div>
+                <img src="../../assets/img/file.png" alt="" />
+              </div>
+              <p>Edit Company Profile</p>
+            </a>
+          </li>
+          <li>
+            <a href="./AddUser.html">
+              <div>
+                <img src="../../assets/img/new-user.png" alt="" />
+              </div>
+              <p>Add User</p>
+            </a>
+          </li>
+        </div>
+      </nav>
+    </aside>
+
+    <section class="content-area">
+      <header>
+        <form action="">
+          <input type="text" />
+          <button>
+            <img src="../../assets/img/search.png" alt="" />
+          </button>
+        </form>
+
+        <div class="icons-wrapper">
+          <button class="lang-button outline">AR</button>
+          <div class="icon-wrappper">
+            <img src="../../assets/img/notfiy.png" alt="" />
+          </div>
+          <div class="icon-wrappper">
+            <img src="../../assets/img/profile.png" alt="" />
+          </div>
+        </div>
+
+        <div class="burger-icon">
+          <i class="fas fa-bars"></i>
+        </div>
+      </header>
+
+      <section class="body-area body-content-area">
+        <div class="top-area">
+          <h2 class="d_flex_align_center">
+            <img src="../../assets/img/info.png" alt="" />
+            about Company
+          </h2>
+          <div class="input-collection row">
+            <div class="input_container_common col-lg-6">
+              <label for="company_name">
+                Company's Name (as shown on Commercial Registration)
+              </label>
+              <div class="input_wrapper_common">
+                <input
+                  type="text"
+                  placeholder="Company Name"
+                  id="company_name"
+                />
+                <img src="../../assets/img/pen.png" alt="" />
+              </div>
+            </div>
+            <div class="input_container_common col-lg-6 mt-lg-0 mt-4">
+              <label for="Commercial-Registration">
+                Commercial Registration Number*
+              </label>
+              <div class="input_wrapper_common">
+                <input
+                  type="text"
+                  placeholder="Reg. number"
+                  id="Commercial-Registration"
+                />
+                <img src="../../assets/img/pen.png" alt="" />
+              </div>
+            </div>
+            <div class="input_container_common col-lg-6 mt-4">
+              <label for="company_name">
+                Manager's Name (as shown on Commercial Registration)
+              </label>
+              <div class="input_wrapper_common">
+                <input
+                  type="text"
+                  placeholder="Manager Name"
+                  id="company_name"
+                />
+                <img src="../../assets/img/pen.png" alt="" />
+              </div>
+            </div>
+            <div class="input_container_common col-lg-6 mt-4">
+              <label for="contact_person"> Role of the contact person* </label>
+              <div class="input_wrapper_common">
+                <input
+                  type="text"
+                  placeholder="Person Name"
+                  id="contact_person"
+                />
+                <img src="../../assets/img/pen.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="top-area bottom-area">
+          <h2 class="d_flex_align_center">
+            <img src="../../assets/img/info.png" alt="" />
+            Contact
+          </h2>
+          <div class="input-collection row">
+            <div class="input_container_common col-lg-6">
+              <label for="Phone"> Phone Number* </label>
+              <div class="input_wrapper_common">
+                <input type="text" placeholder="000-000-00" id="Phone" />
+                <img src="../../assets/img/pen.png" alt="" />
+              </div>
+            </div>
+            <div class="input_container_common col-lg-6 mt-lg-0 mt-4">
+              <label for="Email-Address"> Email Address* </label>
+              <div class="input_wrapper_common">
+                <input
+                  type="email"
+                  placeholder="Reg. number"
+                  id="Email-Address"
+                />
+                <img src="../../assets/img/pen.png" alt="" />
+              </div>
+            </div>
+            <div class="input_container_common col-lg-6 mt-4">
+              <label for="Country_Name"> Country* </label>
+              <div class="input_wrapper_common">
+                <input
+                  type="text"
+                  placeholder="Country Name"
+                  id="Country_Name"
+                />
+                <img src="../../assets/img/pen.png" alt="" />
+              </div>
+            </div>
+            <div class="input_container_common col-lg-6 mt-4">
+              <label for="Street_Name"> Street Name* </label>
+              <div class="input_wrapper_common">
+                <input type="text" placeholder="Street Name" id="Street_Name" />
+                <img src="../../assets/img/pen.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="button-wrapper d_flex">
+          <button class="common_btn">add user</button>
+        </div>
+      </section>
+    </section>
+
+    <script src="../../assets/js/index.js"></script>
+  </body>
+</html>
